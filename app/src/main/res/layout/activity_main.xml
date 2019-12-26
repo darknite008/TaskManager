@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_margin="20dp"
+            android:text="Login"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+           android:id="@+id/etname"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:layout_marginTop="104dp"
+           android:background="@drawable/texfile_rounded"
+           android:drawableRight="@drawable/ic_person_user"
+           android:ems="10"
+           android:layout_margin="20dp"
+           android:drawableTint="@android:color/holo_blue_light"
+           style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+           android:textSize="16dp"
+           android:hint="Username"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+           android:id="@+id/etpass"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:layout_marginTop="36dp"
+           android:hint="Password"
+           android:background="@drawable/texfile_rounded"
+           android:layout_margin="20dp"
+           style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+           android:textSize="16dp"
+           android:inputType="textPassword"
+            android:drawableTint="@android:color/holo_green_light"
+           android:drawableRight="@drawable/ic_person_pass" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btn_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sign In"
+            android:layout_margin="20dp"
+            android:textColorHint="@android:color/white"
+            android:background="@drawable/roundedbutton"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="If not registered, please click Sign up!"
+            android:layout_gravity="center"/>
+        <Button
+            android:id="@+id/btn_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sign up"
+            android:layout_margin="20dp"
+            android:textColorHint="@android:color/white"
+            android:background="@drawable/roundedbutton"/>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
